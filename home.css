@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quote {
+  height: 95vh;
+  width: 100%;
+  color: white;
+  font-size: 2vmax;
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote h6 {
+  width: 70%;
+  font-weight: lighter;
+}
+
+.quote h1 {
+  font-weight: lighter;
+}
+
+.quote button {
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 10px;
+  width: 6.7rem;
+  border: 2px solid white;
+}
+
+.quote button:hover {
+  background-color: black;
+  color:white;
+  transition:0.5s;
+}
+
+#Services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.container {
+  margin: 10px auto;
+  width: auto;
+  justify-content: space-between;
+}
+.Services-h3 {
+  text-align: center;
+}
+.cards-p {
+  font-size: 1rem;
+  margin: 10 auto;
+}
+.cards {
+  height: 30vh;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 1.3rem;
+}
+.cards i {
+  background-color: #00a8ad;
+  padding: 2rem;
+  border-radius: 4rem;
+}
+
+.cards a {
+  color: black;
+}
+
+#About {
+  display: flex;
+  background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/280366728.jpg?k=75016b6853cbaf7403fb740a9be170124a04ad9ca70a09a6250c16c79c6f4595&o=&hp=1);
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.About {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#About div {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+.About-h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.About-p {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+.About button {
+  background-color: transparent;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 10px;
+  width: 6.7rem;
+  border: 2px solid white;
+  margin-top: 2vmax;
+}
+
+.About button:hover {
+  background-color: black;
+  color:white;
+  transition:0.5s;
+}
+
+@media screen and (max-width: 584px) {
+  #Services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cards-p {
+    width: auto;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+#preloader {
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 3%;
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.popupteam {
+  width: 900px;
+  height: 500px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  visibility: hidden;
+  padding: 0px 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popupteam {
+  visibility: visible;
+  top: 110%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popupteam p {
+  font-size: 20px;
+}
+
+.popupteam img {
+  width: 100px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.popupteam h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popupteam button {
+  float: right;
+  margin-top: 10px;
+  margin-right: -10px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.cardteam {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.cardteam h2 {
+  font-size: 20px;
+}
+
+.bablu p,
+.sumit p,
+.gyani p {
+  font-size: 14px;
+}
+
+.bablu,
+.sumit,
+.gyani {
+  height: auto;
+  width: 300px;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1.3rem;
+}
+
+.bablu img,
+.sumit img,
+.gyani img {
+  height: 100px;
+}
+
+.popupservices {
+  width: 80vw;
+  height: 600px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  visibility: hidden;
+  padding: 0px 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popupservices {
+  visibility: visible;
+  top: 110%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popupservices p {
+  font-size: 20px;
+}
+
+.popupservices img {
+  width: 100px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.popupservices h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popupservices button {
+  float: right;
+  margin-top: 10px;
+  margin-right: -10px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.cardservices {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+}
+
+.ourservices {
+  width: 300px;
+  justify-content: space-evenly;
+  text-align: center;
+  
+  padding: 1.3rem;
+}
+
+.ourservices:hover {
+  background: black;
+  color:white;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.cardservices h2 {
+  font-size: 20px;
+}
+
+.ourservices p {
+
+  font-size: 1rem;
+  margin: 10 auto;
+}
+
+.ourservices h3 {
+  font-size: 20px;
+}
+
+.cardservices a{
+  color: #000;
+}
+
+.ourservices img{
+  height:40px;
+  width:50px;
+  border: 0px;
+  border-radius: 0px;
+  overflow: hidden;
+  background: white;
+  box-shadow: none;
+}

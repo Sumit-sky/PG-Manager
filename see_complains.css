@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.selection {
+  width: 400px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+select {
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.compsee {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  border: 0px solid #ddd;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.compsee1 {
+  height: auto;
+  width: 500px;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: left;
+  padding: 25px;
+  border-radius: 10px;
+}
+.id,
+.room,
+.name,
+.phone,
+.email,
+.note,
+.resolution,
+.date,
+.img {
+  margin: 10px;
+}
+
+.img img{
+  height: 200px ;
+  width: 400px;
+}
+
+.co {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  width:95%;
+}
+
+form input {
+  float: right;
+  margin: 20px 20px 0px 0px;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+form input:hover {
+  color: white;
+  background: black;
+  transition: 0.5s ;
+}
+
+#preloader {
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 3%;
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

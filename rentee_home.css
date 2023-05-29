@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+}
+
+#preloader {
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 3%;
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.empt{
+  background-color: grey;
+  height: 250px;
+  width: 100%;
+}
+.container{
+  
+  justify-content: center;
+  text-align: center;
+  margin-bottom:50px;
+  width: 100%;
+}
+
+.smallcards{
+  display: flex;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom:5vh;
+  margin-left: 25vw;
+  width:50%;
+  border: 2px solid black;
+  border-radius: 10px;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.smallcards1{
+  font-size:16px;
+  margin:1vmax;
+  justify-content: space-around;
+
+}
+
+.container h2{
+  margin-top:40px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.profile{
+  text-align: center;
+}
+.profile img{
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  margin-top:-150px;
+}
+
+.pgname,.pphone,.ffname,.aadhar,.address,.email,.phone,.fname,.room,.roomrent,.doj,.gender{
+  margin:10px 0px 10px 10px;
+  height: 50px;
+  width: 300px;}
+
+
+
+.btn{
+  display: flex;
+  justify-content: space-around;
+  margin-left:25vw;
+  width: 50%;
+}
+
+.salary button,.wrong button, .edit button{
+  outline:none;
+  background:white;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+
+button:hover{
+  background-color: black;
+  color:white;
+}
+
+.popupteam {
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  visibility: hidden;
+  padding: 0px 30px 30px;
+  transition: transform 0.4s, top 0.4s;
+  opacity: 1;
+}
+
+.open-popupteam {
+  visibility: visible;
+  top: 100%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popupteam h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 30px 0 0 0px;
+  color: black;
+  
+}
+
+.popupteam button {
+  float: right;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: -10px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.popupteam p{
+  margin-top:30px;
+  color:black;
+  text-align: left;
+}
+
+.popupdate {
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  visibility: hidden;
+  padding: 0px 30px 30px;
+  transition: transform 0.4s, top 0.4s;
+  opacity: 1;
+}
+
+.open-popupdate {
+  visibility: visible;
+  top: 100%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popupdate button {
+  float: right;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: -10px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.popupdate h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 30px 0 0 0px;
+  color: black;  
+}
+
+.popupdate form{
+  margin-top:15px;
+  text-align: left;
+}
+.popupdate form input{
+  height: 40px;
+  width: 300px;
+  border: 1px solid black;
+  margin:10px;
+  border-radius: 5px;
+}
+
+.popupdate form input[type=submit]{
+  outline:none;
+  background:white;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 50px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.popupdate form input[type=submit]:hover{
+  background-color: black;
+  color:white;
+}
+

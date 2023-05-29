@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  background: white;
+  
+}
+
+.hero{
+  height: 400px;
+  background-image: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1{
+  background-image: url() ;
+  font-size: 50px;
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+
+.content h1{
+  font-weight: 500;
+}
+.section{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.section:nth-child(even){
+  flex-direction: row-reverse;
+}
+.section img{
+  width: 50%;
+  height: 350px;
+}
+.section .content{
+  width: 50%;
+  margin: 60px;
+  padding: 20px;
+
+}
+.section h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.section p{
+  font-weight: 300 ;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+p{
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: solid;
+}
+
+#preloader{
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 3%;
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

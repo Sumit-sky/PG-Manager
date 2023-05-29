@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+}
+
+html {
+  background-image: url(https://images.pexels.com/photos/6964171/pexels-photo-6964171.jpeg?cs=srgb&dl=pexels-mikhail-nilov-6964171.jpg&fm=jpg&_gl=1*15gxh32*_ga*MTc4NzAwMzU3LjE2NjMzNDA1MDM.*_ga_8JE65Q40S6*MTY2Nzg5OTMyNy4xMy4xLjE2Njc5MDkyMjEuMC4wLjA.);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  background: black;
+  opacity: 0.7;
+  border-radius: 30px;
+}
+
+form h1 {
+  color: white;
+  font-size: 31px;
+}
+
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: 0.5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+  width: 100%;
+}
+.pass {
+  margin: -5px 0 20px 5px;
+  color: black;
+  cursor: pointer;
+}
+.pass a:hover {
+  text-decoration: underline;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover {
+  border-color: #2691d9;
+  transition: 0.5s;
+}
+.signup_link {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a {
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover {
+  text-decoration: underline;
+}
+
+#preloader {
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 3%;
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

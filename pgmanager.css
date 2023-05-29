@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+  background: url(https://worldarchitecture.org/files/bin/?file=1-407-.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:bottom;
+}
+
+.container1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  margin-top:120px;
+  margin-bottom:50px;
+  /*border: 2px black solid;*/
+  height: auto;
+  width: 96%;
+  justify-content: space-evenly;
+}
+
+.content1,
+.content2{
+  float: inline-start;
+}
+
+.content3,
+.content4 {
+  float: inline-start;
+}
+
+.content5,
+.content6{
+  margin: 20px;
+  float: inline-start;
+}
+.content7,
+.content8{
+  margin: 20px;
+  float: inline-start;
+}
+
+h2 {
+  padding-top: 25%;
+}
+.card h2{
+  color:white;}
+
+  .card button h2{
+  padding-top: 25%;
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6,
+.content7,
+.content8 {
+  border: 2px solid black;
+  width: 350px;
+  height: 250px;
+  margin: 5px;
+  background: black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+}
+
+.content1:hover,
+.content2:hover,
+.content3:hover,
+.content4:hover,
+.content5:hover,
+.content6:hover,
+.content7:hover,
+.content8:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 1px 2px 0px rgba(144, 146, 146, 0.7),
+    1px 2px 4px 0px rgba(144, 146, 146, 0.7),
+    2px 4px 8px 0px rgba(144, 146, 146, 0.7),
+    2px 4px 16px 0px rgba(144, 146, 146, 0.7);
+}
+
+.selection {
+  width: 300px;
+  margin-top:40px;
+  margin-left:10px;
+  margin-bottom: 50px;
+  
+  
+}
+
+select {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#preloader {
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 3%;
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+.popupdel {
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  background: #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  visibility: hidden;
+  padding: 0px 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+  opacity: 0.9;
+}
+
+.open-popupdel {
+  visibility: visible;
+  top: 60%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popupdel h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  margin-top:-60px;
+  
+}
+
+.popupdel button {
+  float: right;
+  margin-top: 10px;
+  margin-right: -10px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+}
+
+form{
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn button{
+  justify-content: center;
+  color: white;
+  border: 3px solid white;
+  border-radius:10px ;
+  height: 40px;
+  width: 110px;
+  margin-right: 120px;
+  margin-top:10px;
+}
+
+.btn button:hover{
+  background-color: white;
+  transition:0.5s;
+  color:black;
+}
