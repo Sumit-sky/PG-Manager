@@ -56,7 +56,7 @@ if (!isset($_SESSION['loggedin']) && $_SESSION['loggediin'] != true) {
                 $numExistRows = mysqli_num_rows($result);
                 //$searching = $_POST['search'];
                 //      echo $searching;
-                
+
 
                 if ($numExistRows > 1) {
 
@@ -170,15 +170,15 @@ if (!isset($_SESSION['loggedin']) && $_SESSION['loggediin'] != true) {
             <?php
             if (is_array($fetchData)) {
                 foreach ($fetchData as $data) {
-                    ?>
+            ?>
                     <div class="smallcards">
                         <div class="profile5">
                             <img src=" <?php if ($data['profilepic']) {
-                                echo $data['profilepic'];
-                            } else {
-                                echo 'images/accicon.png';
-                            }
-                            ''; ?>">
+                                            echo $data['profilepic'];
+                                        } else {
+                                            echo 'images/accicon.png';
+                                        }
+                                        ''; ?>">
                         </div>
                         <div class="pgname">
                             PG Name:
@@ -257,7 +257,7 @@ if (!isset($_SESSION['loggedin']) && $_SESSION['loggediin'] != true) {
                             </div>
                         </div>
                     </div>
-                    <?php
+                <?php
                 }
             } else { ?>
                 <div class="empty">
@@ -265,10 +265,10 @@ if (!isset($_SESSION['loggedin']) && $_SESSION['loggediin'] != true) {
                         <?php echo $fetchData; ?>
                     </div>
                     <div>
-                        <?php
-            } ?>
+                    <?php
+                } ?>
+                    </div>
                 </div>
-            </div>
 
         </div>
 
@@ -276,26 +276,21 @@ if (!isset($_SESSION['loggedin']) && $_SESSION['loggediin'] != true) {
     <div id="search results"></div>
 
     <script>
-
         var loader = document.getElementById("preloader");
-        window.addEventListener("load", function () {
+        window.addEventListener("load", function() {
             preloader.style.display = "none";
         })
     </script>
     <script>
-
         const cfnAction = () => {
             const response = confirm("Are you Sure ?");
 
             if (!response) {
                 event.preventDefault();
-            }
-
-            else {
+            } else {
                 window.location.href = "del_rentee.php";
             }
         }
-
     </script>
 </body>
 

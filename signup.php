@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['username']) {
+if (isset($_SESSION['username'])) {
   header('location:home.php');
   exit;
 }
@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body onload="disableSubmit()">
-  <div class="preloader" id="preloader"></div>
+  <!-- <div class="preloader" id="preloader"></div> -->
 
 
   <div class="center">

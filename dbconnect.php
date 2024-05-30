@@ -1,10 +1,6 @@
 <?php
-$_SERVER = 'localhost';
-$username = 'root';
-$password = 'sumit';
-$database = 'dbmsproject';
 
-$conn = mysqli_connect($_SERVER, $username, $password, $database);
+$conn = mysqli_connect('localhost', 'root', 'sumit', 'pgm');
 
 if (!$conn){
 

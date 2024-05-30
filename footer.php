@@ -70,14 +70,14 @@
 
 <body>
     <div class="footer">
-        <a href="https://www.facebook.com/profile.php?id=100028908728140" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/sumitsky03" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com/sumit.sky/" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/sumit-kumar-yadav-aa0658198/" class="fa fa-linkedin"></a>
-        <a href="https://www.youtube.com/channel/UCVde8ayDV0Smm2Qm1DVTUhA" class="fa fa-youtube"></a>
+        <a href="https://www.facebook.com/profile.php?id=100028908728140" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/sumitsky03" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/sumit.sky/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/sumit-kumar-yadav-aa0658198/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCVde8ayDV0Smm2Qm1DVTUhA" target="_blank" class="fa fa-youtube"></a>
         <br>
         <p style="margin-top:20px;">© copyright 2022-23 <a href="home.php"><span>PG Manager™</span></a> | All rights reserved</p>
-        <p style="margin-top:20px;">A product from Students of <a href="https://cic.du.ac.in/"><span>Cluster Innovation Centre</a></span>, University of Delhi </p>
+        <!-- <p style="margin-top:20px;">A product from Students of <a href="https://cic.du.ac.in/"><span>Cluster Innovation Centre</a></span>, University of Delhi </p> -->
     </div>
 
 </body>

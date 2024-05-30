@@ -7,7 +7,8 @@
 
 html {
   height: 100%;
-  background-image: url(https://images.pexels.com/photos/2530586/pexels-photo-2530586.jpeg?cs=srgb&dl=pexels-scott-webb-2530586.jpg&fm=jpg&_gl=1*1cwch4e*_ga*MTc4NzAwMzU3LjE2NjMzNDA1MDM.*_ga_8JE65Q40S6*MTY2NzY2MDM3Mi40LjEuMTY2NzY2MDc1OS4wLjAuMA..);
+  background-image: url(https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?cs=srgb&dl=pexels-igor-starkov-1307698.jpg&fm=jpg&_gl=1*nwlnmp*_ga*MTc4NzAwMzU3LjE2NjMzNDA1MDM.*_ga_8JE65Q40S6*MTY2NzgyOTcwMi42LjEuMTY2NzgyOTcxOS4wLjAuMA..);
+  /* background-image: url(https://images.pexels.com/photos/2530586/pexels-photo-2530586.jpeg?cs=srgb&dl=pexels-scott-webb-2530586.jpg&fm=jpg&_gl=1*1cwch4e*_ga*MTc4NzAwMzU3LjE2NjMzNDA1MDM.*_ga_8JE65Q40S6*MTY2NzY2MDM3Mi40LjEuMTY2NzY2MDc1OS4wLjAuMA..); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -150,19 +151,21 @@ form .button {
 form button {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
-  border: none;
+  border-radius: 15px;
+  border: 2px solid;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: #2691d9;
 }
 form button:hover {
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-  border-radius: 30px;
+  background: #2691d9;
+  /* border-radius: 30px; */
+  border-color: #2691d9;
+
 }
 
 #message {

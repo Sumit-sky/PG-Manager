@@ -60,7 +60,7 @@ session_start();
 
         </div>
     </div>
-    <p>We are confident that you will love our service and enjoy your stay at our pgs.</p>
+    <p>We are confident that you will love our service.</p>
     <p>We strive to deliver the best customer satisfaction and value for money for our clients.</p>
 
 

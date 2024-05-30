@@ -50,10 +50,10 @@ if ($_POST['submit']) {
         if ($res_up) {
             echo "<script>window.alert('Complain Closed');</script>";
         } else {
-            echo "<script>window.alert('Couldn't Close');</script>";
+            echo "<script>window.alert('Couldn't Close complain');</script>";
         }
     } else {
-        echo "<script>window.alert('Couldn't Close!');</script>";
+        echo "<script>window.alert('Couldn't Close complain! Try Again');</script>";
     }
 }
 
